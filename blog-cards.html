@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogSpace Cards - عرض الكاردز</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: 'hsl(213, 94%, 68%)',
+                            foreground: 'hsl(0, 0%, 100%)',
+                            hover: 'hsl(213, 94%, 63%)'
+                        },
+                        success: {
+                            DEFAULT: 'hsl(134, 61%, 41%)',
+                            foreground: 'hsl(0, 0%, 100%)'
+                        },
+                        warning: {
+                            DEFAULT: 'hsl(45, 100%, 51%)',
+                            foreground: 'hsl(212, 10%, 23%)'
+                        },
+                        danger: {
+                            DEFAULT: 'hsl(354, 70%, 54%)',
+                            foreground: 'hsl(0, 0%, 100%)'
+                        },
+                        muted: {
+                            DEFAULT: 'hsl(210, 17%, 98%)',
+                            foreground: 'hsl(215, 16%, 47%)'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .card-shadow {
+            box-shadow: 0 4px 6px -1px hsl(213 94% 68% / 0.1);
+        }
+        .card-shadow-hover:hover {
+            box-shadow: 0 10px 15px -3px hsl(213 94% 68% / 0.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen p-8">
+    <div class="max-w-7xl mx-auto">
+        <!-- عنوان الصفحة -->
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-gray-800 mb-4">BlogSpace Cards Collection</h1>
+            <p class="text-xl text-gray-600">مجموعة من تصاميم الكاردز المستخدمة في المشروع</p>
+        </div>
+
+        <!-- قسم المقالات المميزة -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-center mb-8">كاردز المقالات المميزة</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- كارد المقال الأول -->
+                <div class="bg-white rounded-lg card-shadow card-shadow-hover group cursor-pointer transition-all duration-300 hover:-translate-y-1 border-0">
+                    <div class="p-6 space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary text-white">
+                                Technology
+                            </span>
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-warning text-black">
+                                Featured
+                            </span>
+                        </div>
+                        <h3 class="text-xl font-semibold group-hover:text-primary transition-colors">
+                            The Future of Remote Work
+                        </h3>
+                    </div>
+                    
+                    <div class="px-6 pb-6 space-y-4">
+                        <p class="text-base text-gray-600 leading-relaxed">
+                            Exploring how remote work is reshaping the modern workplace and what it means for the future.
+                        </p>
+                        
+                        <div class="flex items-center justify-between text-sm text-gray-500">
+                            <span>Sarah Johnson</span>
+                            <span>5 min read</span>
+                        </div>
+                        
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">Dec 15, 2024</span>
+                            <button class="text-sm group-hover:text-primary transition-colors">
+                                Read More →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- كارد المقال الثاني -->
+                <div class="bg-white rounded-lg card-shadow card-shadow-hover group cursor-pointer transition-all duration-300 hover:-translate-y-1 border-0">
+                    <div class="p-6 space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-200 text-gray-800">
+                                Lifestyle
+                            </span>
+                        </div>
+                        <h3 class="text-xl font-semibold group-hover:text-primary transition-colors">
+                            Building Sustainable Habits
+                        </h3>
+                    </div>
+                    
+                    <div class="px-6 pb-6 space-y-4">
+                        <p class="text-base text-gray-600 leading-relaxed">
+                            A practical guide to creating lasting changes that improve your daily life and well-being.
+                        </p>
+                        
+                        <div class="flex items-center justify-between text-sm text-gray-500">
+                            <span>Mike Chen</span>
+                            <span>8 min read</span>
+                        </div>
+                        
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">Dec 12, 2024</span>
+                            <button class="text-sm group-hover:text-primary transition-colors">
+                                Read More →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- كارد المقال الثالث -->
+                <div class="bg-white rounded-lg card-shadow card-shadow-hover group cursor-pointer transition-all duration-300 hover:-translate-y-1 border-0">
+                    <div class="p-6 space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium border border-gray-300 text-gray-700">
+                                Design
+                            </span>
+                        </div>
+                        <h3 class="text-xl font-semibold group-hover:text-primary transition-colors">
+                            The Art of Minimalist Design
+                        </h3>
+                    </div>
+                    
+                    <div class="px-6 pb-6 space-y-4">
+                        <p class="text-base text-gray-600 leading-relaxed">
+                            Understanding the principles behind effective minimalist design and how to apply them.
+                        </p>
+                        
+                        <div class="flex items-center justify-between text-sm text-gray-500">
+                            <span>Emma Davis</span>
+                            <span>6 min read</span>
+                        </div>
+                        
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">Dec 10, 2024</span>
+                            <button class="text-sm group-hover:text-primary transition-colors">
+                                Read More →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم المميزات -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-center mb-8">كاردز المميزات</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- كارد الميزة الأولى -->
+                <div class="bg-white rounded-lg card-shadow hover:shadow-lg transition-shadow duration-300 text-center border-0">
+                    <div class="p-8 space-y-4">
+                        <div class="text-4xl mb-4">
+                            ✍️
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">
+                            Write & Publish
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Create beautiful articles with our intuitive editor and publish them instantly.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- كارد الميزة الثانية -->
+                <div class="bg-white rounded-lg card-shadow hover:shadow-lg transition-shadow duration-300 text-center border-0">
+                    <div class="p-8 space-y-4">
+                        <div class="text-4xl mb-4">
+                            👥
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">
+                            Build Community
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Connect with readers and writers who share your interests and passions.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- كارد الميزة الثالثة -->
+                <div class="bg-white rounded-lg card-shadow hover:shadow-lg transition-shadow duration-300 text-center border-0">
+                    <div class="p-8 space-y-4">
+                        <div class="text-4xl mb-4">
+                            📈
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">
+                            Grow Your Audience
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Reach new readers and build a following around your unique voice and content.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- كارد الميزة الرابعة -->
+                <div class="bg-white rounded-lg card-shadow hover:shadow-lg transition-shadow duration-300 text-center border-0">
+                    <div class="p-8 space-y-4">
+                        <div class="text-4xl mb-4">
+                            💰
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">
+                            Monetize Content
+                        </h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Turn your writing passion into income with our built-in monetization tools.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم الإحصائيات -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-center mb-8">كاردز الإحصائيات</h2>
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- إحصائية الكتاب -->
+                <div class="bg-white rounded-lg card-shadow p-6 text-center">
+                    <div class="text-3xl font-bold text-primary mb-2">10K+</div>
+                    <div class="text-sm text-gray-600">Active Writers</div>
+                </div>
+
+                <!-- إحصائية المنشورات -->
+                <div class="bg-white rounded-lg card-shadow p-6 text-center">
+                    <div class="text-3xl font-bold text-success mb-2">50K+</div>
+                    <div class="text-sm text-gray-600">Published Posts</div>
+                </div>
+
+                <!-- إحصائية القراء -->
+                <div class="bg-white rounded-lg card-shadow p-6 text-center">
+                    <div class="text-3xl font-bold text-warning mb-2">1M+</div>
+                    <div class="text-sm text-gray-600">Monthly Readers</div>
+                </div>
+
+                <!-- إحصائية الرضا -->
+                <div class="bg-white rounded-lg card-shadow p-6 text-center">
+                    <div class="text-3xl font-bold text-danger mb-2">98%</div>
+                    <div class="text-sm text-gray-600">Satisfaction Rate</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم التقييم -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-center mb-8">كارد التقييم</h2>
+            <div class="max-w-2xl mx-auto">
+                <div class="bg-gradient-to-br from-blue-50 to-blue-25 rounded-2xl p-8 space-y-4">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold">
+                            A
+                        </div>
+                        <div>
+                            <div class="font-semibold">Alex Thompson</div>
+                            <div class="text-sm text-gray-600">Published Author</div>
+                        </div>
+                    </div>
+                    <blockquote class="text-lg italic text-gray-700">
+                        "BlogSpace has transformed how I connect with my readers. 
+                        The platform is intuitive, and the community is incredibly supportive."
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم الأسئلة الشائعة -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-center mb-8">كاردز الأسئلة الشائعة</h2>
+            <div class="max-w-4xl mx-auto space-y-4">
+                <!-- سؤال واحد كمثال -->
+                <div class="bg-white rounded-lg card-shadow px-6 py-4">
+                    <div class="flex justify-between items-center">
+                        <h3 class="font-semibold text-lg">How do I get started with BlogSpace?</h3>
+                        <span class="text-2xl">+</span>
+                    </div>
+                    <div class="mt-4 text-gray-600 leading-relaxed">
+                        Getting started is easy! Simply sign up for a free account, verify your email, and you can start writing immediately. Our intuitive editor makes it simple to create beautiful posts.
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg card-shadow px-6 py-4">
+                    <div class="flex justify-between items-center">
+                        <h3 class="font-semibold text-lg">Is BlogSpace free to use?</h3>
+                        <span class="text-2xl">+</span>
+                    </div>
+                    <div class="mt-4 text-gray-600 leading-relaxed">
+                        Yes, BlogSpace offers a generous free plan that includes basic publishing features. We also offer premium plans with advanced features like custom domains, analytics, and monetization tools.
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg card-shadow px-6 py-4">
+                    <div class="flex justify-between items-center">
+                        <h3 class="font-semibold text-lg">Can I import my existing blog content?</h3>
+                        <span class="text-2xl">+</span>
+                    </div>
+                    <div class="mt-4 text-gray-600 leading-relaxed">
+                        Absolutely! We support importing from most major blogging platforms including WordPress, Medium, and Substack. Our import tool preserves your formatting and metadata.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- أزرار الإجراءات -->
+        <section class="text-center">
+            <h2 class="text-3xl font-bold mb-8">أزرار الإجراءات</h2>
+            <div class="flex flex-wrap justify-center gap-4">
+                <button class="px-6 py-3 bg-primary text-white rounded-lg hover:bg-blue-600 transition-colors">
+                    Primary Button
+                </button>
+                <button class="px-6 py-3 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors">
+                    Secondary Button
+                </button>
+                <button class="px-6 py-3 bg-success text-white rounded-lg hover:bg-green-600 transition-colors">
+                    Success Button
+                </button>
+                <button class="px-6 py-3 bg-warning text-black rounded-lg hover:bg-yellow-500 transition-colors">
+                    Warning Button
+                </button>
+                <button class="px-6 py-3 bg-danger text-white rounded-lg hover:bg-red-600 transition-colors">
+                    Danger Button
+                </button>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
